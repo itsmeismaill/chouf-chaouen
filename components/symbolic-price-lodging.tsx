@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import { Bed, Wifi, Coffee, MapPin } from 'lucide-react'
+import { Wifi, Coffee, MapPin } from 'lucide-react'
 
 const lodgings = [
   { id: 1, name: 'Blue Haven Hostel', price: 15, amenities: ['wifi', 'breakfast'], image: '/hot1.jpg', location: { lat: 35.168, lng: -5.268 } },
