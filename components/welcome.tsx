@@ -5,7 +5,7 @@ export function WelcomeToChefchaouen() {
     <section id="welcome" className="py-16 bg-chefchaouen-blue">
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold text-white mb-4">Welcome to the Blue City, Chefchaouen</h2>
-        <p className="text-xl text-white mb-8">"Where every corner is a masterpiece and every moment is a memory."</p>
+        <p className="text-xl text-white mb-8">&quot;Where every corner is a masterpiece and every moment is a memory.&quot;</p>
         <div className="relative w-full h-64 sm:h-80 md:h-96 mb-8">
           <Image
             src="/545350.jpg"
