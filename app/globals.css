@@ -3,25 +3,57 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --chefchaouen-blue: #0096c7;
+  --chefchaouen-light-blue: #00b4d8;
+  --chefchaouen-dark-blue: #023e8a;
+  --chefchaouen-white: #f0f4f8;
+  --chefchaouen-accent: #fca311;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-chefchaouen-white text-gray-900;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .bg-chefchaouen-blue {
+    background-color: var(--chefchaouen-blue);
+  }
+  .bg-chefchaouen-light-blue {
+    background-color: var(--chefchaouen-light-blue);
+  }
+  .bg-chefchaouen-dark-blue {
+    background-color: var(--chefchaouen-dark-blue);
+  }
+  .bg-chefchaouen-white {
+    background-color: var(--chefchaouen-white);
+  }
+  .bg-chefchaouen-accent {
+    background-color: var(--chefchaouen-accent);
+  }
+  .text-chefchaouen-blue {
+    color: var(--chefchaouen-blue);
+  }
+  .text-chefchaouen-light-blue {
+    color: var(--chefchaouen-light-blue);
+  }
+  .text-chefchaouen-dark-blue {
+    color: var(--chefchaouen-dark-blue);
+  }
+  .text-chefchaouen-accent {
+    color: var(--chefchaouen-accent);
   }
 }
+
+.moroccan-pattern {
+  background-color: var(--chefchaouen-blue);
+  background-image: 
+    radial-gradient(circle at 100% 150%, var(--chefchaouen-blue) 24%, var(--chefchaouen-light-blue) 25%, var(--chefchaouen-light-blue) 28%, var(--chefchaouen-blue) 29%, var(--chefchaouen-blue) 36%, var(--chefchaouen-light-blue) 36%, var(--chefchaouen-light-blue) 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, var(--chefchaouen-blue) 24%, var(--chefchaouen-light-blue) 25%, var(--chefchaouen-light-blue) 28%, var(--chefchaouen-blue) 29%, var(--chefchaouen-blue) 36%, var(--chefchaouen-light-blue) 36%, var(--chefchaouen-light-blue) 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, var(--chefchaouen-light-blue) 10%, var(--chefchaouen-blue) 11%, var(--chefchaouen-blue) 23%, var(--chefchaouen-light-blue) 24%, var(--chefchaouen-light-blue) 30%, var(--chefchaouen-blue) 31%, var(--chefchaouen-blue) 43%, var(--chefchaouen-light-blue) 44%, var(--chefchaouen-light-blue) 50%, var(--chefchaouen-blue) 51%, var(--chefchaouen-blue) 63%, var(--chefchaouen-light-blue) 64%, var(--chefchaouen-light-blue) 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, var(--chefchaouen-light-blue) 5%, var(--chefchaouen-blue) 6%, var(--chefchaouen-blue) 15%, var(--chefchaouen-light-blue) 16%, var(--chefchaouen-light-blue) 20%, var(--chefchaouen-blue) 21%, var(--chefchaouen-blue) 30%, var(--chefchaouen-light-blue) 31%, var(--chefchaouen-light-blue) 35%, var(--chefchaouen-blue) 36%, var(--chefchaouen-blue) 45%, var(--chefchaouen-light-blue) 46%, var(--chefchaouen-light-blue) 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0    50%, var(--chefchaouen-light-blue) 5%, var(--chefchaouen-blue) 6%, var(--chefchaouen-blue) 15%, var(--chefchaouen-light-blue) 16%, var(--chefchaouen-light-blue) 20%, var(--chefchaouen-blue) 21%, var(--chefchaouen-blue) 30%, var(--chefchaouen-light-blue) 31%, var(--chefchaouen-light-blue) 35%, var(--chefchaouen-blue) 36%, var(--chefchaouen-blue) 45%, var(--chefchaouen-light-blue) 46%, var(--chefchaouen-light-blue) 49%, transparent 50%, transparent);
+  background-size: 100px 50px;
+}
+
